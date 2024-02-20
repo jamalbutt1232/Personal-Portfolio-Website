@@ -10,127 +10,56 @@
       integrity="sha384-ezxxgH5h9R84Z6VHV2KxJzEunlOU/DV0KB6Qb5SwfSSZfxjPIzj1P4kJGWI8V1P5"
       crossorigin="anonymous"
     />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        background-color: #1f1f2e;
-        color: white;
-        font-family: "Cambria", Cochin, Georgia, Times, "Times New Roman", serif;
-        line-height: 1.6;
-      }
-      header {
-        background-color: #121430;
-        padding: 20px;
-        text-align: center;
-      }
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-      nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 70px;
-        background-color: #121430;
-        padding: 0 20px;
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-      }
-      nav .logo {
-        font-size: 24px;
-        font-weight: bold;
-      }
-      nav ul {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 50%;
-        margin-left: auto;
-      }
-      nav ul li {
-        list-style: none;
-        margin: 0 10px;
-      }
-      .firstsection {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 50px 0;
-      }
-      .leftsection {
-        background-color: #4d1c8c;
-        padding: 20px;
-        border-radius: 8px;
-        text-align: center;
-      }
-      .purple {
-        color: #b276eb;
-      }
-      .rightsection img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-      }
-      nav ul li a {
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-        transition: color 0.3s ease-in-out;
-      }
-      nav ul li a:hover {
-        color: #b276eb;
-      }
-      .social-icons {
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-      }
-      .social-icons a {
-        color: #b276eb;
-        font-size: 20px;
-        margin: 0 10px;
-        transition: color 0.3s ease-in-out;
-      }
-      .social-icons a:hover {
-        color: #4d1c8c;
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha384-ezxxgH5h9R84Z6VHV2KxJzEunlOU/DV0KB6Qb5SwfSSZfxjPIzj1P4kJGWI8V1P5"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <div class="container">
         <h1 class="logo">Syed Jawad Shah</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact Me</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
       <section class="firstsection">
         <div class="leftsection">
-          Hi, I'm <span class="purple">Jawad</span>, a Web Developer.
+          Hi, I'm <span class="purple">Jawad</span>, a Web Developer. I turn
+          ideas into beautiful and functional websites.
         </div>
-        <div>I turn ideas into beautiful and functional websites.</div>
         <div class="rightsection">
           <img src="Wd.png" alt="Web Developer" />
         </div>
       </section>
+      <section class="internship-section">
+        <div class="container">
+          <h2>Internship Experience</h2>
+          <p>
+            I recently completed an internship at Bitficial Technologies, where
+            I gained valuable experience in the field of web development. During
+            this internship, I had the opportunity to work on various projects
+            and enhance my skills in coding, problem-solving, and collaboration
+            within a team.
+          </p>
+        </div>
+      </section>
     </main>
-    <nav>
-      <div class="container">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact Me</a></li>
-        </ul>
-      </div>
-    </nav>
     <div class="container social-icons">
       <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
       <a href="#" target="_blank"><i class="fab fa-github"></i></a>
