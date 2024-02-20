@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal-Portfolio-Website</title>
+    <title>Syed Jawad Shah - Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha384-ezxxgH5h9R84Z6VHV2KxJzEunlOU/DV0KB6Qb5SwfSSZfxjPIzj1P4kJGWI8V1P5"
+      crossorigin="anonymous"
+    />
     <style>
       * {
         margin: 0;
@@ -11,12 +17,13 @@
         box-sizing: border-box;
       }
       body {
-        background-color: rgb(1, 1, 37);
+        background-color: #1f1f2e;
         color: white;
-        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-family: "Cambria", Cochin, Georgia, Times, "Times New Roman", serif;
+        line-height: 1.6;
       }
       header {
-        background-color: rgb(1, 1, 63);
+        background-color: #121430;
         padding: 20px;
         text-align: center;
       }
@@ -29,8 +36,11 @@
         justify-content: space-between;
         align-items: center;
         height: 70px;
-        background-color: rgb(1, 1, 63);
+        background-color: #121430;
         padding: 0 20px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
       }
       nav .logo {
         font-size: 24px;
@@ -50,22 +60,46 @@
       .firstsection {
         display: flex;
         justify-content: space-around;
-        margin: 23px 0;
-      }
-      .firstsection div {
-        width: 30%;
+        align-items: center;
+        margin: 50px 0;
       }
       .leftsection {
-        background-color: red;
-        text-size-adjust: 3rem;
+        background-color: #4d1c8c;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
       }
       .purple {
-        color: rgb(178, 118, 235);
+        color: #b276eb;
       }
-
-      nav ul li a{
+      .rightsection img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      }
+      nav ul li a {
         text-decoration: none;
         color: white;
+        font-weight: bold;
+        transition: color 0.3s ease-in-out;
+      }
+      nav ul li a:hover {
+        color: #b276eb;
+      }
+      .social-icons {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      .social-icons a {
+        color: #b276eb;
+        font-size: 20px;
+        margin: 0 10px;
+        transition: color 0.3s ease-in-out;
+      }
+      .social-icons a:hover {
+        color: #4d1c8c;
       }
     </style>
   </head>
@@ -78,22 +112,29 @@
     <main>
       <section class="firstsection">
         <div class="leftsection">
-          Hi, my name is<span class="purple"> Jawad </span>
+          Hi, I'm <span class="purple">Jawad</span>, a Web Developer.
         </div>
-        <div>I am a web developer</div>
-        <div class="rightsection"><img src="Wd.png" alt= ></div>
+        <div>I turn ideas into beautiful and functional websites.</div>
+        <div class="rightsection">
+          <img src="Wd.png" alt="Web Developer" />
+        </div>
       </section>
     </main>
     <nav>
       <div class="container">
         <ul>
-          <li> <a href="/">Home</li></a>
-          <li> <a href="/">About</li></a>
-          <li> <a href="/">Services</li></a>
-           <li> <a href="/">Projects</li></a>
-           <li> <a href="/">Contact Me</li></a>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact Me</a></li>
         </ul>
       </div>
     </nav>
+    <div class="container social-icons">
+      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
   </body>
 </html>
