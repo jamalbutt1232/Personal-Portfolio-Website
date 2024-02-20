@@ -30,6 +30,9 @@ nav {
   top: 0;
   z-index: 1000;
 }
+.secondsection h2 {
+  font-size: 1.9rem;
+}
 
 main {
   padding: 20px;
@@ -84,4 +87,8 @@ nav ul li {
 
 .social-icons a:hover {
   color: skyblue;
+}
+nav ul :hover {
+  cursor: pointer;
+  color: azure;
 }
