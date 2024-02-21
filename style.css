@@ -1,21 +1,23 @@
 body {
-  background-color: rgb(40, 13, 64);
-  color: white;
+  background-color: black;
+  color: #fff;
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
   margin: 0;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  overflow-x: hidden;
 }
 
 header {
-  background-color: black;
+  background-color: #1f1f1f;
   padding: 20px;
   text-align: center;
+  color: white;
+  transition: background-color 0.3s ease-in-out;
+}
+
+header h1 {
+  text-align: left;
+  margin: 0;
   color: white;
 }
 
@@ -24,14 +26,32 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 70px;
-  background-color: rgb(26, 9, 43);
+  background-color: dark gray;
   padding: 0 20px;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
-.secondsection h2 {
-  font-size: 1.9rem;
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: skyblue;
 }
 
 main {
@@ -47,7 +67,7 @@ main {
 }
 
 .leftsection {
-  background-color: blueviolet;
+  background-color: darkblue;
   padding: 20px;
   border-radius: 8px;
   text-align: center;
@@ -55,21 +75,20 @@ main {
 }
 
 .rightsection img {
-  max-width: 75%;
-  height: 30%;
+  max-width: 50%;
+  height: auto;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
 }
 
-nav ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.animated-img:hover {
+  transform: scale(1.1);
 }
 
-nav ul li {
-  list-style: none;
-  margin: 0 10px;
+.secondsection h2 {
+  font-size: 1.9rem;
+  color: #3498db;
 }
 
 .social-icons {
@@ -78,17 +97,24 @@ nav ul li {
   justify-content: center;
 }
 
-.social-icons a {
-  color: lavender;
-  font-size: 24px;
+.social-link {
+  color: white;
+  font-size: 18px;
   margin: 0 15px;
+  text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
 
-.social-icons a:hover {
+.social-link:hover {
   color: skyblue;
 }
-nav ul :hover {
-  cursor: pointer;
-  color: azure;
+.animated {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.animated.show {
+  opacity: 1;
+  transform: translateY(0);
 }

@@ -11,16 +11,11 @@
       crossorigin="anonymous"
     />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha384-ezxxgH5h9R84Z6VHV2KxJzEunlOU/DV0KB6Qb5SwfSSZfxjPIzj1P4kJGWI8V1P5"
-      crossorigin="anonymous"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   </head>
   <body>
     <header>
@@ -28,26 +23,25 @@
         <h1 class="logo">Syed Jawad Shah</h1>
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact Me</a></li>
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Services</a></li>
+            <li><a href="#" class="nav-link">Projects</a></li>
+            <li><a href="#" class="nav-link">Contact Me</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <section class="firstsection">
+      <section class="firstsection animated">
         <div class="leftsection">
-          Hi, I'm <span class="purple">Jawad</span>, a Web Developer. I turn
-          ideas into beautiful and functional websites.
+          Hi, I'm <span id="typed-output" class="purple"></span>
         </div>
         <div class="rightsection">
-          <img src="Wd.png" alt="Web Developer" />
+          <img src="Wd.png" alt="Web Developer" class="animated-img" />
         </div>
       </section>
-      <section class="secondsection">
+      <section class="secondsection animated">
         <div class="container">
           <h2>Work experience</h2>
           <p>
@@ -60,22 +54,52 @@
         </div>
       </section>
     </main>
+
     <div class="container social-icons">
       <a
         href="https://www.linkedin.com/in/syed-jawad-shah-06974b206/"
         target="_blank"
+        class="social-link"
       >
-        https://www.linkedin.com/in/syed-jawad-shah-06974b206
-        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-linkedin"></i> LinkedIn
       </a>
-      <a href="https://github.com/jawad1529" target="_blank">
-        https://github.com/jawad1529
-        <i class="fab fa-github"></i>
+      <a
+        href="https://github.com/jawad1529"
+        target="_blank"
+        class="social-link"
+      >
+        <i class="fab fa-github"></i> GitHub
       </a>
-      <a href="mailto:syedjawadshah00@gmail.com" target="_blank">
-        syedjawadshah00@gmail.com
-        <i class="fab fa-twitter"></i>
+      <a
+        href="mailto:syedjawadshah00@gmail.com"
+        target="_blank"
+        class="social-link"
+      >
+        <i class="far fa-envelope"></i> Email
       </a>
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll(".animated");
+
+        // Typed.js for typing animation
+        const options = {
+          strings: ["Jawad", "a Web Developer"],
+          typeSpeed: 50,
+          backSpeed: 30,
+          showCursor: false,
+          onComplete: function (self) {
+            self.cursor.remove();
+          },
+        };
+
+        const typed = new Typed("#typed-output", options);
+
+        sections.forEach((section) => {
+          section.classList.add("show");
+        });
+      });
+    </script>
   </body>
 </html>
