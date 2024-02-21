@@ -132,3 +132,40 @@ main {
     width: 1500px;
   }
 }
+.timeline-section {
+  margin-top: 50px;
+}
+
+.timeline {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+}
+
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.timeline-year {
+  font-size: 1.5rem;
+  color: skyblue;
+  margin-bottom: 10px;
+}
+
+.timeline-content {
+  text-align: center;
+}
+
+.timeline-content h3 {
+  color: skyblue;
+}
+
+.timeline-content p {
+  color: white;
+}
+timeline-sectionanimated h2 {
+  color: skyblue;
+}
