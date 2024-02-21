@@ -118,3 +118,17 @@ main {
   opacity: 1;
   transform: translateY(0);
 }
+.aesthetic-line {
+  border: none;
+  height: 2px;
+  background-color: snow;
+  width: 0;
+  margin: 20px auto;
+  animation: lineAnimation 1s ease-out forwards;
+}
+
+@keyframes lineAnimation {
+  to {
+    width: 1500px;
+  }
+}
