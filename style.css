@@ -164,8 +164,17 @@ main {
 }
 
 .timeline-content p {
-  color: white;
+  color: gray;
 }
-timeline-sectionanimated h2 {
+.timeline-sectionanimated h2 {
   color: skyblue;
+}
+.social-icon-img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+footer {
+  background-color: gray;
+  text-align: center;
 }
