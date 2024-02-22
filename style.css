@@ -178,3 +178,11 @@ footer {
   background-color: gray;
   text-align: center;
 }
+@media screen and (max-width: 2000px) {
+  body {
+    background-color: red;
+  }
+  .firstsectionanimated {
+    flex-direction: column-reverse;
+  }
+}
